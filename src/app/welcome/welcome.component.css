@@ -1,0 +1,20 @@
+body{
+    background-color:  while;
+    padding:  0;
+    margin: 25px;
+    margin-top:50px;
+}
+p{
+    color: #222222;
+    font-family:  'Bitter',serif;
+    line-height: 35px;
+    text-align: justify;
+
+
+}
+h1{
+    text-align: center;
+    color:  #ff0066;
+    font-size: 50px;
+
+}

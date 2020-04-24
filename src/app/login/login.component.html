@@ -1,0 +1,12 @@
+ <H2>Login!</H2>
+ 
+ 
+ <div class="alert alert-warning" *ngIf='invalidLogin'>{{errorMessage}}</div> 
+<div>
+  username = "in28minutes"  password = 'dummy'
+ User Name: <input type="text" name="username" [(ngModel)]="username" >
+ Password: <input type="password" name="password" [(ngModel)]= "password">
+ <br>
+ <button (click)=handleLogin() class="btn btn-success"> Login</button>
+</div>
+

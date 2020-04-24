@@ -1,0 +1,22 @@
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular-sanitize/1.6.4/angular-sanitize.min.js"></script>
+<script src="/bower_components/angular-read-more/readmore.min.js"></script>
+<h1>Welcome</h1>
+<div class="container">
+  <p data-dd-collapse-text="100" >Welcome</p>  
+  Welcome {{name}}. You can manage your todos<a routerLink="/todos">here</a>
+  </div>
+
+ 
+<div class="container">
+<button (click)="getWelcomeMessageWithParameter()" class ="btn btn-success ">Get Welcome Message</button>
+</div>
+<!-- only show the value for the welcomeMessageFromService when it has the values  -->
+
+<div class="container" *ngIf="welcomeMessageFromService">
+  <h2>
+    Your Customized  Wleomc Message
+
+  </h2>
+  {{welcomeMessageFromService}}
+ 
+  </div>
